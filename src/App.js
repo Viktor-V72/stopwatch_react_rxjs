@@ -1,14 +1,6 @@
 import { useState, useEffect } from "react";
-import { of, interval, concat, Subject } from "rxjs";
-import {
-  takeWhile,
-  takeUntil,
-  scan,
-  startWith,
-  repeatWhen,
-  share,
-  filter,
-} from "rxjs/operators";
+import { interval, Subject } from "rxjs";
+import { takeUntil } from "rxjs/operators";
 import useDoubleClick from "./click";
 
 import "./styles.css";
